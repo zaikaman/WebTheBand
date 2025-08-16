@@ -11,6 +11,10 @@ html, body {
     line-height: 1.5;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 div {
     display: block;
     unicode-bidi: isolate;
