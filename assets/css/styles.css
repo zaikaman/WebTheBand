@@ -1,0 +1,597 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+/* 
+1. Từ ngoài vào trong
+2. Từ trên xuống dưới
+3. Tổng quan đến chi tiết
+*/
+
+/* 
+1. Vị trí
+2. Kích thước
+3. Màu sắc
+4. Kiểu dáng (kiểu chữ, hình tròn, vuông, ...)
+*/
+
+#main {
+
+}
+
+#header {
+    height: 46.5px;
+    background-color: black;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 22.5px;
+    padding: 12px 24px;
+    font-size: 15px;
+    font-family: sans-serif;
+    display: inline-block;
+}
+
+#nav > li:hover > a {
+    color: #000;
+    background-color: #ccc;
+    line-height: 22.5px;
+}
+
+.subnav2 {
+    width: 100%;
+    padding-right: 28px;
+}
+
+.subnav2:hover {
+    background-color: #ccc;
+    display: block;
+}
+
+.subnav > .subnav2 > a {
+    color: #000;
+    padding: 0 16px !important;
+    line-height: 38px !important;
+}
+
+#nav .subnav {
+    min-width: 160px;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-arrow-down {
+    font-size: 14px;
+}
+
+#header .search-btn {
+    float: right;
+    line-height: 46.5px;
+    padding: 0 26px;
+    cursor: pointer;
+}
+
+#header .search-btn:hover {
+    color: #fff;
+    background-color: #f44336;
+}
+
+.search-icon {
+    color: #fff;
+    font-size: 15px;
+}
+
+#slider {
+    background-image: url("https://www.w3schools.com/w3images/chicago.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin-top: 46.5px;
+    padding-top: 50%;
+    position: relative;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+#slider .text-description {
+    font-size: 15px;
+}
+
+#content {
+
+}
+
+#content .content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+    background-color: #fff;
+}
+
+.section-heading {
+    font-family:'Segoe UI', Arial, sans-serif;
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.section-sub-heading {
+    text-align: center;
+    opacity: 0.60;
+    font-size: 15px;
+    display: block;
+    margin: 15px 0;
+}
+
+#content .content-section .about-text {
+    font-size: 15px;
+    font-family: sans-serif;
+    text-align: justify;
+    margin: 15px 0;
+    line-height: 1.4;
+}
+
+#content .members-list {
+    padding: 32px 0;
+    overflow: hidden;
+}
+
+.members-list .member-item {
+    float: left;
+    width: 33.3333%;
+    display: block;
+    text-align: center;
+}
+
+.member-item .member-name {
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.member-item img {
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+#content2 {
+    background-color: #000;
+    height: 845.487px;
+}
+
+#content2 .content-section {
+    padding: 64px 0;
+}
+
+#content2 .content-section h2,
+#content2 .content-section i {
+    color:#fff;
+}
+
+#content2 .content-section h2 {
+    margin: 10px 0;
+}
+
+#content2 .content-section .months {
+    background-color: #fff;
+    border: 1px solid #ccc !important;
+    width: 766.400px;
+    height: 117.100px;
+    display: block;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.months li {
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #757575 !important;
+    display: list-item;
+    padding: 8px 16px !important;
+    border-bottom: 1px solid #ddd;
+    line-height: 1.4;
+    width: 766.4px;
+    height: 38.5px;
+}
+
+.sold-out {
+    margin-left: 16px;
+    color: #fff;
+    background-color: #f44336;
+    padding-left: 8px;
+    padding-right: 8px;
+    display: inline-block;
+    text-align: center;
+}
+
+.badge {
+    margin-right: 16px;
+    float: right;
+    border-radius: 50%;
+    background-color: #000;
+    padding: 0 8px;
+    color: #fff;
+    text-align: center;
+}
+
+.tour-list {
+    margin: 0 auto;
+    padding: 32px 0;
+    /* overflow: hidden; */
+    width: 784px;
+    height: 405px;
+}
+
+.tour-item {
+    padding: 0 8px;
+    width: 33.33333%;
+    float: left;
+    overflow: hidden;
+}
+
+.tour-list img {
+    width: 100%;
+    display: block;
+}
+
+.tour-info {
+    color: #000;
+    background-color: #fff;
+    padding: 0.150px 16px;
+    display: block;
+    width: 245.33px;
+    /* height: 208.8px; */
+    /* clear: both; */
+}
+
+.tour-info p {
+    margin: 15px 0;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+
+.opacity {
+    opacity: 0.6;
+}
+
+.tour-info .buy-button {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    border: none; /* Không có border */
+    outline: 2px solid transparent; /* Outline trong suốt */
+    outline-offset: 0;
+}
+
+.tour-info .buy-button:hover {
+    color: #000;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    outline: 2px solid #ccc;
+}
+
+#footer {
+
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: none;
+}
+
+.modal .modal-content {
+    width: 900px;
+    height: 471.5px;
+    position: relative;
+    margin: auto;
+    animation: animatetop 0.4s;
+}
+
+.modal .modal-content .header {
+    color: #fff;
+    background-color: #009688;
+    display: block;
+    padding: 32px 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.tickets {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.5;
+    letter-spacing: 4px;
+    display: block;
+    font-family:'Segoe UI', Arial, sans-serif;
+    font-weight: 400;
+}
+
+.x {
+    font-size: 24px;
+    right: 0;
+    top: 0;
+    position: absolute;
+    padding: 8px 16px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: sans-serif;
+}
+
+.modal-body {
+    padding: 0.15px 16px;
+    display: block;
+    width: 900px;
+    height: 342.5px;
+    background-color: #fff;
+}
+
+.modal-body p {
+    margin: 15px 0;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: sans-serif;
+    display: block;
+}
+
+.input-box {
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 100%;
+    font-size: 15px;
+    line-height: 22.5px;
+}
+
+.pay-button {
+    color: #fff;
+    background-color: #009688;
+    width: 100%;
+    display: block;
+    padding: 16px 0;
+    margin: 16px 0;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 15px;
+    font-family: sans-serif;
+    line-height: 22.5px;
+}
+
+.close-button {
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    color: #fff;
+    background-color: #f44336;
+    margin: 0;
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding: 8px 16px;
+    text-align: center;
+    margin-left: 16px;
+    bottom: 16px;
+    line-height: 22.5px;
+}
+
+.ti-close {
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+.need-help {
+    font-size: 15px;
+    font-family: sans-serif;
+    float: right;
+}
+
+.help {
+    color: #2196F3;
+}
+
+.band-button:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.open {
+    display: block;
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.content-section3 {
+    max-width: 800px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.content-section3 .section-heading {
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.content-section3 .contact-body {
+    padding: 32px 0;
+    overflow: hidden;
+}
+
+.contact-text {
+    font-size: 18px;
+    width: 50%;
+    margin-bottom: 16px;
+    float: left;
+}
+
+.contact-text i {
+    width: 30px;
+}
+
+.contact-form {
+    float: left;
+    width: 50%;
+}
+
+.hang-dau {
+    margin: 0 -16px 8px -16px;
+    padding: 0 8px;
+    height: 40.1px;
+}
+
+.half-row {
+    padding: 0 8px;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.contact-form input {
+    border: 1px solid #ccc;
+    padding: 8px;
+    display: inline-block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.send-button {
+    color: #fff;
+    background-color: #000;
+    float: right;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.map-img {
+    width: 100%;
+    filter: grayscale(50%);
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.footer {
+    color: #000;
+    background-color: #f1f1f1;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    text-align: center;
+    font-size: 24px;
+    opacity: 0.60;
+    /* padding: 0.01em 16px; */
+    display: block;
+    line-height: 36px;
+    height: 216.5px;
+}
+
+.footer i {
+    display: inline-block;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.footer a {
+    color: #000;
+}
