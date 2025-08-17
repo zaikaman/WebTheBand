@@ -124,6 +124,10 @@ div {
     font-size: 15px;
 }
 
+.menu-icon {
+    display: none;
+}
+
 #slider {
     background-image: url("https://www.w3schools.com/w3images/chicago.jpg");
     background-size: cover;
@@ -157,10 +161,11 @@ div {
 }
 
 #content .content-section {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    padding: 64px 0;
+    padding: 64px 16px;
     background-color: #fff;
 }
 
@@ -233,7 +238,8 @@ div {
 #content2 .content-section .months {
     background-color: #fff;
     border: 1px solid #ccc !important;
-    width: 766.400px;
+    width: 100%;
+    max-width: 766.400px;
     height: 117.100px;
     display: block;
     margin: 0 auto;
@@ -248,7 +254,8 @@ div {
     padding: 8px 16px !important;
     border-bottom: 1px solid #ddd;
     line-height: 1.4;
-    width: 766.4px;
+    width: 100%;
+    max-width: 766.4px;
     height: 38.5px;
 }
 
@@ -276,7 +283,8 @@ div {
     margin: 0 auto;
     padding: 32px 0;
     /* overflow: hidden; */
-    width: 784px;
+    width: 100%;
+    max-width: 784px;
     height: 405px;
 }
 
@@ -297,7 +305,8 @@ div {
     background-color: #fff;
     padding: 0.150px 16px;
     display: block;
-    width: 245.33px;
+    width: 100%;
+    max-width: 245.33px;
     /* height: 208.8px; */
     /* clear: both; */
 }
@@ -356,7 +365,8 @@ div {
 }
 
 .modal .modal-content {
-    width: 900px;
+    width: 100%;
+    max-width: 900px;
     height: 471.5px;
     position: relative;
     margin: auto;
@@ -399,7 +409,8 @@ div {
 .modal-body {
     padding: 0.15px 16px;
     display: block;
-    width: 900px;
+    width: 100%;
+    max-width: 900px;
     height: 342.5px;
     background-color: #fff;
 }
@@ -598,4 +609,49 @@ div {
 
 .footer a {
     color: #000;
+}
+
+#content2 .content-section {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+@media (max-width: 739px) {
+    #header #nav li, .search-btn {
+        display: none;
+    }
+
+    .home {
+        display: block !important;
+    }
+
+    .menu-btn {
+        display: block;
+        float: right;
+        line-height: 46.5px;
+        padding: 0 26px;
+        cursor: pointer;    
+        color: #fff;
+        font-size: 15px;
+        font-family: sans-serif;
+        height: 46.5px;
+        width: auto;
+        border: none;
+    }
+
+    .menu-btn:hover {
+        color: #000;
+        background-color: #ccc;
+    }
+
+    .menu-icon:hover {
+        color: #000;
+    }
+
+    .menu-icon {
+        color: #fff;
+        display: inline-block;
+        cursor: pointer;
+        line-height: 15px;
+    }
 }
