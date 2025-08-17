@@ -223,7 +223,6 @@ div {
 
 #content2 {
     background-color: #000;
-    height: 845.487px;
 }
 
 #content2 .content-section {
@@ -297,6 +296,7 @@ div {
     width: 33.33333%;
     float: left;
     overflow: hidden;
+    margin-bottom: 16px;
 }
 
 .tour-list img {
@@ -647,7 +647,8 @@ div {
         border: none;
         box-sizing: border-box;
         top: 0;
-        position: relative;
+        right: 0;
+        position: absolute;
     }
 
     .menu-btn:hover {
@@ -699,5 +700,36 @@ div {
 
     .menu-li {
         display: inline-block;
+    }
+
+    .members-list .member-item {
+        float: none;
+        width: auto;
+    }
+
+    .members-list .member-item img {
+        width: 60%;
+    }
+
+    .tour-list .tour-item {
+        float: none;
+        width: 100%;
+        width: 398.4px;
+        height: 481.1px;
+        padding: 0;
+    }
+
+    .tour-list .tour-item img {
+        width: 398.4px;
+        height: 298.8px;
+    }
+
+    .tour-info {
+        width: 398.4px !important;
+        max-width: 398.4px !important;
+    }
+
+    #content2 {
+        height: 1932px !important;
     }
 }
