@@ -11,12 +11,16 @@
     <div id="main">
         <!--Start Header -->
         <div id="header">
+            <a class="menu-btn js-menu-button">
+                <i class="menu-icon ti-menu"></i>
+            </a>
             <ul id="nav">
                 <li class="home"><a href="#">HOME</a></li>
-                <li><a href="#about">BAND</a></li>
-                <li><a href="#tour">TOUR</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-                <li>
+                <li class="about js-menu"><a href="#about">BAND</a></li>
+                <li class="tour js-menu"><a href="#tour">TOUR</a></li>
+                <li class="contact js-menu"><a href="#contact">CONTACT</a></li>
+                <li class="merch js-menu"><a href="#">MERCH</a></li>
+                <li class="more">
                     <a href="">
                         MORE
                         <i class="nav-arrow-down ti-angle-down"></i>
@@ -31,9 +35,6 @@
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
             </div>
-            <a class="menu-btn">
-                <i class="menu-icon ti-menu"></i>
-            </a>
         </div>
 
         <div id="slider">
@@ -216,6 +217,21 @@
         for (const closeBtn of closeBtns){
             closeBtn.addEventListener('click', hideBuyModal);
         }
+    </script>
+
+    <script>
+        const menuBtn = document.querySelector('.js-menu-button');
+        const navListItems = document.querySelectorAll('.js-menu');
+        const header = document.querySelector('#header');
+
+        function toggleMenu() {
+            header.classList.toggle('increase-header-height');
+            for (const navListItem of navListItems){
+                navListItem.classList.toggle('open-menu');
+            }
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
     </script>
 </body>
 </html>

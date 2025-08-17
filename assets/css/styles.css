@@ -79,6 +79,10 @@ div {
     line-height: 22.5px;
 }
 
+#header #nav .merch {
+    display: none;
+}
+
 .subnav2 {
     width: 100%;
     padding-right: 28px;
@@ -616,6 +620,10 @@ div {
     padding-right: 16px;
 }
 
+.black-rectangle {
+    display: none;
+}
+
 @media (max-width: 739px) {
     #header #nav li, .search-btn {
         display: none;
@@ -637,6 +645,9 @@ div {
         height: 46.5px;
         width: auto;
         border: none;
+        box-sizing: border-box;
+        top: 0;
+        position: relative;
     }
 
     .menu-btn:hover {
@@ -653,5 +664,40 @@ div {
         display: inline-block;
         cursor: pointer;
         line-height: 15px;
+    }
+
+    #header #nav li {
+        background-color: #000;
+        margin: -1px 0;
+    }
+
+    /* #header #nav .merch {
+        display: block;
+    } */
+
+    #header #nav .more {
+        display: none;
+    }
+
+    /* .black-rectangle {
+        width: 430px;
+        max-width: 739px;
+    } */
+
+    .increase-header-height {
+        height: 226.5px !important;
+    }
+
+    .open-menu {
+        display: block !important;
+    }
+
+    /* Logic: Bình thường thì display của #nav li là none
+    khi click menu-btn thì sẽ hiển thị #nav li bằng display: block
+    và add class open-menu vào #header và .merch
+    */
+
+    .menu-li {
+        display: inline-block;
     }
 }
